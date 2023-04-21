@@ -40,7 +40,7 @@ int main(){
 ```
 
 ## Window Struct
-A tifb window has the following arguments you can access and modify:
+A tifb window consists of following arguments you can access and modify:
 ```c
 typedef struct {
   char *title;        // The title of the window
