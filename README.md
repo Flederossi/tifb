@@ -22,6 +22,10 @@ int main(){
     for (int i = 0; i < sizeof(w.keys) / sizeof(long); i++){
       if (w.keys[i] == XK_Escape) running = 0;
     }
+    
+    // To find the index of a coordinate in the buffer you can use w.buffer[y * width + x]
+    w.buffer[0 * w.width + 0] = 0xffffff;
+    
     tifb_update(&w);
   }
   
@@ -29,3 +33,18 @@ int main(){
   return 0;
 }
 ```
+
+# Window Struct
+A tifb window has the following arguments which you can access:
+```c
+typedef struct {
+  char *title; // The title of the window
+  int width, height; // The dimensions of the window
+  uint32_t *buffer; // The pixel buffer (consists of the pixel colors)
+  long *keys; // The pointer which contains the pressed keys (gets updated by tifb_update())
+}
+``` 
+
+# Keysyms
+To see all available keysyms to check the keys pointer with you can run:
+```cat /usr/include/X11/keysymdef.h```
