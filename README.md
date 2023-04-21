@@ -1,8 +1,8 @@
 # tifb
-A tiny X11 frame buffer which allows you to open a window, receive keyboard inputs as well as draw single pixels.
+A tiny, singleheader X11 frame buffer which allows you to open a window, receive keyboard inputs as well as draw single pixels.
 
 # Usage
-Include the src/tifb.h file in your project and add the compiler flag -lX11
+Include the tifb.h header in your project, add the compiler flag `-lX11` and you are ready to go!
 
 > Minimal example:
 ```c
