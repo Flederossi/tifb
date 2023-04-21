@@ -12,7 +12,7 @@ Include the [tifb.h](https://github.com/Flederossi/tifb/blob/main/tifb.h) header
 int main(){
   // Create the window
   tifb_window w;
-  w.title = "tifb - window";
+  w.title = "example - minimal";
   w.width = 800;
   w.height = 600;
   
