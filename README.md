@@ -43,10 +43,10 @@ int main(){
 A tifb window has the following arguments which you can access:
 ```c
 typedef struct {
-  char *title; // The title of the window
-  int width, height; // The dimensions of the window
-  uint32_t *buffer; // The pixel buffer (consists of the pixel colors)
-  long *keys; // The pointer which contains the pressed keys (gets updated by tifb_update())
+  char *title;        // The title of the window
+  int width, height;  // The dimensions of the window
+  uint32_t *buffer;   // The pixel buffer (consists of the pixel colors as uint32_t)
+  long *keys;         // The pointer which contains the pressed keys (gets updated by tifb_update())
 }
 ``` 
 
