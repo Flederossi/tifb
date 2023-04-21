@@ -26,8 +26,7 @@ int main(){
       if (w.keys[i] == XK_Escape) running = 0;
     }
     
-    // To find the index of a coordinate in the buffer you can use w.buffer[y * width + x]
-    // The following line draws a white pixel at (0|0)
+    // Draw a white pixel at (0|0)
     w.buffer[0 * w.width + 0] = 0xffffff;
     
     // Update the window
