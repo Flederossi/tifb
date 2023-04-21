@@ -21,7 +21,7 @@ int main(){
   
   int running = 1;
   while (running){
-    // Check if ESC-Key is in pointer of pressed keys
+    // Check if ESC-Key is pressed
     for (int i = 0; i < sizeof(w.keys) / sizeof(long); i++){
       if (w.keys[i] == XK_Escape) running = 0;
     }
