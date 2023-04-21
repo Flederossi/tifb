@@ -39,6 +39,8 @@ int main(){
 }
 ```
 
+This and some other examples can be found [here]().
+
 ## Window Struct
 A tifb window consists of following arguments you can access and modify:
 ```c
