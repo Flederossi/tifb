@@ -51,7 +51,7 @@ typedef struct {
 ``` 
 
 ## Keysyms
-To see all available keysyms to check in the keys pointer, you can run:
+To get all keysyms you can check for on your distro, just run:
 ```
 cat /usr/include/X11/keysymdef.h
 ```
