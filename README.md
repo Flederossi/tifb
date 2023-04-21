@@ -53,7 +53,7 @@ typedef struct {
 ``` 
 
 ## Keysyms
-To get all keysyms you can check for on your distro, just run:
+To get all keysyms you can check for, just run:
 ```
 cat /usr/include/X11/keysymdef.h
 ```
