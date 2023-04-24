@@ -29,7 +29,7 @@ int main(){
 		for (int i = 0; i < sizeof(w.keys) / sizeof(long); i++){
 			if (w.keys[i] == XK_Escape) running = 0;
 
-			// Update the position of Arrow-Key is pressed
+			// Update the position if Arrow-Key is pressed
 			if (w.keys[i] == XK_Up && y - 25 > 0) y -= 5;
 			if (w.keys[i] == XK_Down && y + 25 < w.height) y += 5;
 			if (w.keys[i] == XK_Left && x - 25 > 0) x -= 5;
